@@ -37,16 +37,42 @@
                 </div>
 
                 <div class="row text-center">
-                    <div class="col-6">
+                    <div class="col-md-6 col-lg-3">
                         <div class="border-start border-4 border-accent p-3">
                             <h4 class="display-5 fw-bold text-accent">G+6</h4>
                             <p class="text-uppercase text-white-50">Floors</p>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6 col-lg-3">
                         <div class="border-start border-4 border-accent p-3">
                              <h4 class="display-5 fw-bold text-accent">76</h4>
                             <p class="text-uppercase text-white-50">Total Units</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mt-4 mt-lg-0">
+                        <div class="border-start border-4 border-accent p-3">
+                             <h4 class="display-5 fw-bold text-accent">72</h4>
+                            <p class="text-uppercase text-white-50">Flats</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mt-4 mt-lg-0">
+                        <div class="border-start border-4 border-accent p-3">
+                             <h4 class="display-5 fw-bold text-accent">4</h4>
+                            <p class="text-uppercase text-white-50">Penthouse</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center mt-4">
+                    <div class="col-md-6 col-lg-3 mx-auto">
+                        <div class="border-start border-4 border-accent p-3">
+                             <h4 class="display-5 fw-bold text-accent">12</h4>
+                            <p class="text-uppercase text-white-50">2 BHK</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mx-auto">
+                        <div class="border-start border-4 border-accent p-3">
+                             <h4 class="display-5 fw-bold text-accent">60</h4>
+                            <p class="text-uppercase text-white-50">3 BHK</p>
                         </div>
                     </div>
                 </div>
@@ -171,7 +197,7 @@
     <div class="container" data-aos="fade-up">
         <h3 class="display-5 font-serif fw-bold mb-5">Download Project Details</h3>
         <div class="d-grid gap-3 d-md-flex justify-content-md-center">
-            <a href="#" class="btn btn-outline-accent btn-lg"><i class="fas fa-file-pdf me-2"></i> Download Brochure</a>
+            <a href="{{ url_for('static', filename='UB World.pdf') }}" class="btn btn-outline-accent btn-lg"><i class="fas fa-file-pdf me-2"></i> Download Brochure</a>
         </div>
     </div>
 </section>
