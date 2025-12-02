@@ -1,0 +1,149 @@
+:root {
+    --bs-primary: #D4AF37;
+    --bs-secondary: #F2D06B;
+    --bs-dark: #0F0F0F;
+    --bs-light: #F5F5F5;
+    --bs-font-sans: 'Outfit', sans-serif;
+    --bs-font-monospace: 'Playfair Display', serif;
+}
+
+body {
+    font-family: var(--bs-font-sans);
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif {
+    font-family: var(--bs-font-monospace);
+}
+
+.text-accent {
+    color: var(--bs-primary) !important;
+}
+
+.btn-accent {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: #000;
+}
+
+.btn-accent:hover {
+    background-color: #c8a02f;
+    border-color: #c8a02f;
+}
+
+.btn-outline-accent {
+    color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-outline-accent:hover {
+    background-color: var(--bs-primary);
+    color: #000;
+}
+
+.bg-dark {
+    background-color: var(--bs-dark) !important;
+}
+
+.bg-light {
+    background-color: var(--bs-light) !important;
+    color: var(--bs-dark) !important;
+}
+
+.accordion-button {
+    color: var(--bs-dark);
+}
+.accordion-body {
+    color: #fff;
+}
+.card {
+    background-color: #1F1F1F;
+    color: var(--bs-light);
+}
+.card-text{
+    color: var(--bs-light) !important;
+}
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* FAQ Section */
+#faq-search {
+    background-color: #1F1F1F;
+    border-color: #333;
+    color: #fff;
+}
+
+#faq-search:focus {
+    background-color: #1F1F1F;
+    border-color: var(--bs-primary);
+    color: #fff;
+    box-shadow: none;
+}
+
+.accordion-item {
+    background-color: #1F1F1F !important;
+    border-color: #333 !important;
+    color: #fff !important;
+}
+
+.accordion-button {
+    color: #fff !important;
+    background-color: #1F1F1F !important;
+    font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff !important;
+    background-color: #111 !important;
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--bs-primary);
+}
+
+.accordion-button::after {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.scrolling-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.scrolling-inner {
+    display: flex;
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.scrolling-item {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust width as needed */
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.scrolling-item:hover {
+    transform: scale(1.05);
+}
+
+.scrolling-item img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+}
