@@ -27,6 +27,9 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+    <!-- Preload critical images -->
+    <link rel="preload" href="{{ url_for('static', filename='img/img1.jpeg') }}" as="image">
 </head>
 
 <body class="font-sans antialiased">
@@ -37,7 +40,7 @@
             <a class="navbar-brand font-serif" href="{{ url_for('home') }}">
                 <img src="{{ url_for('static', filename='img/logo.jpeg') }}"
                     class="d-inline-block align-top rounded-circle border border-accent" alt="Logo" height="30" width="30">
-                UB <span class="text-accent">GROUP</span>
+                UB <span class="text-accent">WORLD</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,8 +78,8 @@
             <div class="row text-center text-md-left">
 
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <img src="{{ url_for('static', filename='img/logo.jpeg') }}" class="rounded-circle border border-accent mb-4" alt="UB Group Logo" style="height: 64px; width: 64px;">
-                    <p class="font-serif fs-5 fw-bold">UB <span class="text-accent">GROUP</span></p>
+                    <img src="{{ url_for('static', filename='img/logo.jpeg') }}" class="rounded-circle border border-accent mb-4" alt="UB World Logo" style="height: 64px; width: 64px;">
+                    <p class="font-serif fs-5 fw-bold">UB <span class="text-accent">WORLD</span></p>
                     <p>Living Together, Growing Together.<br>Providing luxury in the heart of the city.</p>
                 </div>
 
@@ -102,7 +105,7 @@
 
             <div class="row align-items-center">
                 <div class="col-md-7 col-lg-8">
-                    <p>© 2025 <span class="text-accent fw-bold">UB GROUP™</span>. All Rights Reserved. Also, design and created by <strong>snverse</strong></p>
+                    <p>© 2025 <span class="text-accent fw-bold">UB WORLD™</span>. All Rights Reserved. Also, design and created by <strong>snverse</strong></p>
                 </div>
                 <div class="col-md-5 col-lg-4">
                     <div class="text-center text-md-right">

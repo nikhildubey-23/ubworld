@@ -13,7 +13,7 @@
         <div class="carousel-item active" style="background-image: url({{ url_for('static', filename='img/img1.jpeg') }}); height: 100vh; background-size: cover; background-position: center;">
             <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-white text-center" style="background-color: rgba(0, 0, 0, 0.6);">
                 <div class="max-w-4xl" data-aos="zoom-in">
-                    <h1 class="display-3 fw-bold font-serif">Welcome to <span class="text-accent">UB GROUP</span></h1>
+                    <h1 class="display-3 fw-bold font-serif">Welcome to <span class="text-accent">UB WORLD</span></h1>
                     <p class="lead fs-4 fw-light">"Living Together, Growing Together"</p>
                     <a href="{{ url_for('project') }}" class="btn btn-accent btn-lg rounded-pill">Explore UB World</a>
                 </div>
@@ -57,10 +57,10 @@
                 <img class="img-fluid rounded-3 shadow-lg border" src="{{ url_for('static', filename='img/img13.jpeg') }}" alt="Interior">
             </div>
             <div class="col-md-6" data-aos="fade-left">
-                <h2 class="text-sm fw-bold text-accent text-uppercase tracking-widest mb-3">Redefining Luxury</h2>
+                <h2 class="text-sm fw-bold text-accent text-uppercase tracking-widest mb-3 my-2">Redefining Luxury</h2>
                 <h3 class="display-5 font-serif fw-bold mb-4">Luxury in the Heart of the City</h3>
                 <p class="text-white-50 mb-4 fs-5">
-                    At UB GROUP, we don't just build apartments; we craft lifestyles. Our latest project, <span class="text-accent fw-medium">UB WORLD</span>, is a testament to our commitment to affordable luxury. Located centrally, it offers the perfect blend of urban convenience and serene living.
+                    At UB WORLD, we don't just build apartments; we craft lifestyles. Our latest project, <span class="text-accent fw-medium">UB WORLD</span>, is a testament to our commitment to affordable luxury. Located centrally, it offers the perfect blend of urban convenience and serene living.
                 </p>
                 <a href="{{ url_for('about') }}" class="link-accent fw-bold fs-5 text-decoration-none d-flex align-items-center gap-2">
                     Read Our Story <i class="fas fa-arrow-right"></i>
@@ -133,12 +133,12 @@
             <div class="scrolling-inner">
                 {% for image in ['img10.jpeg', 'img11.jpeg', 'img12.jpeg', 'img2.jpeg', 'img3.jpeg', 'img4.jpeg', 'img5.jpeg', 'img6.jpeg', 'img7.jpeg', 'img8.jpeg', 'img9.jpeg', 'logo.jpeg','img13.jpeg','img1.jpeg'] %}
                 <div class="scrolling-item">
-                    <img src="{{ url_for('static', filename='img/' + image) }}" alt="UB World Image" class="img-fluid">
+                    <img src="{{ url_for('static', filename='img/' + image) }}" alt="UB World Image" class="img-fluid" loading="lazy">
                 </div>
                 {% endfor %}
                  {% for image in ['img10.jpeg', 'img11.jpeg', 'img12.jpeg', 'img2.jpeg', 'img3.jpeg', 'img4.jpeg', 'img5.jpeg', 'img6.jpeg', 'img7.jpeg', 'img8.jpeg', 'img9.jpeg','img13.jpeg','img1.jpeg'] %}
                 <div class="scrolling-item">
-                    <img src="{{ url_for('static', filename='img/' + image) }}" alt="UB World Image" class="img-fluid">
+                    <img src="{{ url_for('static', filename='img/' + image) }}" alt="UB World Image" class="img-fluid" loading="lazy">
                 </div>
                 {% endfor %}
             </div>

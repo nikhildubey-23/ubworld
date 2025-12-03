@@ -147,3 +147,18 @@ html {
     height: 200px; /* Fixed height for all images */
     object-fit: cover; /* Ensures images cover the area without distortion */
 }
+
+/* Hero Section Responsiveness */
+@media (max-width: 768px) {
+    .carousel-item h1.display-3 {
+        font-size: 2.5rem !important; /* Smaller font size for h1 on small screens */
+    }
+
+    .carousel-item p.lead {
+        font-size: 1.25rem !important; /* Adjust lead paragraph font size */
+    }
+
+    .carousel-item .btn {
+        margin-bottom: 20px; /* Add some space below the button */
+    }
+}
