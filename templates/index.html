@@ -122,7 +122,8 @@
 </section>
 
 <!-- Image Scroller -->
-<section class="py-5">
+<section class="py-2
+">
     <div class="container-fluid">
         <div class="text-center mb-5" data-aos="fade-up">
             <h2 class="text-sm fw-bold text-accent text-uppercase tracking-widest mb-2">Visual Showcase</h2>
@@ -133,12 +134,12 @@
             <div class="scrolling-inner">
                 {% for image in ['img10.jpeg', 'img11.jpeg', 'img12.jpeg', 'img2.jpeg', 'img3.jpeg', 'img4.jpeg', 'img5.jpeg', 'img6.jpeg', 'img7.jpeg', 'img8.jpeg', 'img9.jpeg', 'logo.jpeg','img13.jpeg','img1.jpeg'] %}
                 <div class="scrolling-item">
-                    <img src="{{ url_for('static', filename='img/' + image) }}" alt="UB World Image" class="img-fluid" loading="lazy">
+                    <img src="{{ url_for('static', filename='img/' + image) }}" alt="UB World Image" class="img-fluid">
                 </div>
                 {% endfor %}
                  {% for image in ['img10.jpeg', 'img11.jpeg', 'img12.jpeg', 'img2.jpeg', 'img3.jpeg', 'img4.jpeg', 'img5.jpeg', 'img6.jpeg', 'img7.jpeg', 'img8.jpeg', 'img9.jpeg','img13.jpeg','img1.jpeg'] %}
                 <div class="scrolling-item">
-                    <img src="{{ url_for('static', filename='img/' + image) }}" alt="UB World Image" class="img-fluid" loading="lazy">
+                    <img src="{{ url_for('static', filename='img/' + image) }}" alt="UB World Image" class="img-fluid">
                 </div>
                 {% endfor %}
             </div>
@@ -147,7 +148,7 @@
 </section>
 
 <!-- FAQ (Bootstrap Accordion) -->
-<section class="py-5 bg-dark">
+<section class="py-2 bg-dark">
     <div class="container">
         <div class="text-center mb-5">
             <h2 class="text-sm fw-bold text-accent text-uppercase tracking-widest mb-2">FAQ</h2>

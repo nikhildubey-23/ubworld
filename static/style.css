@@ -118,7 +118,7 @@ html {
 
 .scrolling-inner {
     display: flex;
-    animation: scroll 40s linear infinite;
+    animation: scroll 10s linear infinite;
 }
 
 @keyframes scroll {
@@ -144,8 +144,10 @@ html {
 .scrolling-item img {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    height: 200px; /* Fixed height for all images */
-    object-fit: cover; /* Ensures images cover the area without distortion */
+    /* height: 200px; Removed fixed height */
+    object-fit: cover;
+    width: 100%; /* Make image fill its container */
+    height: auto; /* Allow height to adjust automatically */
 }
 
 /* Hero Section Responsiveness */
@@ -160,5 +162,10 @@ html {
 
     .carousel-item .btn {
         margin-bottom: 20px; /* Add some space below the button */
+    }
+
+    .scrolling-item {
+        width: 150px; /* Smaller width for mobile */
+        margin: 0 10px; /* Adjusted margin */
     }
 }
