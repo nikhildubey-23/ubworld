@@ -27,3 +27,35 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+// Theme Switcher
+document.addEventListener('DOMContentLoaded', () => {
+    const themeSwitcher = document.getElementById('theme-switcher');
+    const body = document.body;
+    const icon = themeSwitcher.querySelector('i');
+
+    const updateIcon = () => {
+        if (body.classList.contains('light-mode')) {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+        } else {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        }
+    };
+
+    const toggleTheme = () => {
+        body.classList.toggle('light-mode');
+        localStorage.setItem('theme', body.classList.contains('light-mode') ? 'light' : 'dark');
+        updateIcon();
+    };
+
+    themeSwitcher.addEventListener('click', toggleTheme);
+
+    // On page load, set the theme
+    if (localStorage.getItem('theme') === 'light') {
+        body.classList.add('light-mode');
+    }
+    updateIcon();
+});
+

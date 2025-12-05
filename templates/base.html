@@ -61,13 +61,18 @@
                 </ul>
                 <a href="{{ url_for('contact') }}" class="btn btn-accent btn-sm md:btn-md">Contact
                     Us</a>
+                <button id="theme-switcher" class="btn btn-outline-secondary btn-sm ms-2">
+                    <i class="fas fa-sun"></i>
+                </button>
             </div>
         </div>
     </nav>
 
     <!-- Main Content -->
     <main style="padding-top: 56px;">
-        {% block content %}{% endblock %}
+        <div style="overflow-x: hidden;">
+            {% block content %}{% endblock %}
+        </div>
     </main>
 
     <!-- Footer -->

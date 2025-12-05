@@ -132,7 +132,7 @@
         <div class="row g-4">
             {% for image in ['img10.jpeg', 'img11.jpeg', 'img12.jpeg', 'img2.jpeg', 'img3.jpeg', 'img4.jpeg'] %}
             <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-delay="{{ loop.index0 * 100 }}">
-c                <img src="{{ url_for('static', filename='img/' + image) }}" alt="UB World Image" class="img-fluid rounded shadow" style="width: 100%; height: 250px; object-fit: cover;">
+                <img src="{{ url_for('static', filename='img/' + image) }}" alt="UB World Image" class="img-fluid rounded shadow" style="width: 100%; height: 250px; object-fit: cover;">
             </div>
             {% endfor %}
         </div>

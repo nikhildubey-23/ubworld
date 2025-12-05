@@ -169,3 +169,55 @@ html {
         margin: 0 10px; /* Adjusted margin */
     }
 }
+
+/* Light Mode */
+body.light-mode {
+    background-color: var(--bs-light);
+    color: var(--bs-dark);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode .bg-dark {
+    background-color: #E9ECEF !important;
+}
+body.light-mode .text-white {
+    color: #000 !important;
+}
+body.light-mode .text-white-50 {
+    color: #6c757d !important;
+}
+
+body.light-mode .card {
+    background-color: #FFF;
+    color: var(--bs-dark);
+}
+
+body.light-mode .accordion-item,
+body.light-mode .accordion-button {
+    background-color: #FFF !important;
+    color: var(--bs-dark) !important;
+    border-color: #dee2e6 !important;
+}
+
+body.light-mode .accordion-button:not(.collapsed) {
+    background-color: #F8F9FA !important;
+}
+
+body.light-mode .navbar-dark {
+    background-color: #F8F9FA !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+body.light-mode .navbar-dark .nav-link,
+body.light-mode .navbar-dark .navbar-brand {
+    color: var(--bs-dark) !important;
+}
+
+body.light-mode footer {
+    background-color: #F8F9FA !important;
+}
+
+body.light-mode #theme-switcher {
+    color: #000;
+    border-color: #000;
+}
