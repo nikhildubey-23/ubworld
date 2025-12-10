@@ -22,5 +22,13 @@ def contact():
 def download_brochure():
     return send_from_directory('static', 'UB World.pdf', as_attachment=True)
 
+@app.route('/robots.txt')
+def robots_txt():
+    return send_from_directory(app.static_folder, 'robots.txt')
+
+@app.route('/sitemap.xml')
+def sitemap():
+    return send_from_directory(app.static_folder, 'sitemap.xml')
+
 if __name__ == '__main__':
     app.run(debug=True)
