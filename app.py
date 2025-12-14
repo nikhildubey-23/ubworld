@@ -22,6 +22,10 @@ def contact():
 def download_brochure():
     return send_from_directory('static', 'UB World.pdf', as_attachment=True)
 
+@app.route('/view/brochure')
+def view_brochure():
+    return send_from_directory('static', 'UB World.pdf', as_attachment=False)
+
 @app.route('/robots.txt')
 def robots_txt():
     return send_from_directory(app.static_folder, 'robots.txt')
