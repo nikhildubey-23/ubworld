@@ -5,6 +5,7 @@
     --light-color: #F5F5F5;
     --sans-font: 'Outfit', sans-serif;
     --serif-font: 'Playfair Display', serif;
+    --navbar-bg: var(--dark-color);
 }
 
 body {
@@ -18,8 +19,8 @@ h1, h2, h3, h4, h5, h6, .font-serif {
     font-family: var(--serif-font);
 }
 
-/* Navbar */
 .navbar {
+    background-color: var(--navbar-bg);
     transition: background-color 0.4s ease-out, box-shadow 0.4s ease-out;
     padding: 1rem 0;
 }
@@ -130,8 +131,33 @@ h1, h2, h3, h4, h5, h6, .font-serif {
     .display-4 { font-size: 2.2rem; }
 }
 
+/* Accordion Styles */
+.accordion-item {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+}
+.accordion-button {
+    background-color: #1a1a1a;
+    color: var(--light-color);
+}
+.accordion-button:not(.collapsed) {
+    color: var(--primary-color);
+    background-color: #2c2c2c;
+}
+.accordion-body {
+    color: var(--light-color);
+}
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+.accordion-button.collapsed::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
 /* Light Mode */
 body.light-mode {
+    --navbar-bg: var(--light-color);
     background-color: var(--light-color);
     color: var(--dark-color);
 }
@@ -144,3 +170,22 @@ body.light-mode .navbar.scrolled { background-color: rgba(248, 249, 250, 0.85); 
 body.light-mode .nav-link { color: rgba(0, 0, 0, 0.7) !important; }
 body.light-mode .nav-link:hover, body.light-mode .nav-link.active { color: var(--primary-color) !important; }
 body.light-mode .navbar-brand-text { color: var(--dark-color); }
+
+body.light-mode .accordion-item {
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+body.light-mode .accordion-button {
+    background-color: #fff;
+    color: var(--dark-color);
+}
+body.light-mode .accordion-button:not(.collapsed) {
+    color: var(--primary-color);
+    background-color: #f8f9fa;
+}
+body.light-mode .accordion-body {
+    color: var(--dark-color);
+}
+body.light-mode .accordion-button.collapsed::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
