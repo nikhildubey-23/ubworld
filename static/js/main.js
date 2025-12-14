@@ -2,9 +2,9 @@
 window.addEventListener('scroll', function () {
     const navbar = document.getElementById('navbar');
     if (navbar && window.scrollY > 50) {
-        navbar.classList.add('shadow-lg');
+        navbar.classList.add('scrolled');
     } else if (navbar) {
-        navbar.classList.remove('shadow-lg');
+        navbar.classList.remove('scrolled');
     }
 });
 
@@ -58,4 +58,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     updateIcon();
 });
-
