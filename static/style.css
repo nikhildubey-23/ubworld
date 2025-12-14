@@ -36,6 +36,7 @@ h1, h2, h3, h4, h5, h6, .font-serif {
 }
 
 .navbar-brand-text {
+    font-family: var(--serif-font);
     font-size: 1.75rem;
     font-weight: 700;
     vertical-align: middle;
@@ -121,6 +122,10 @@ h1, h2, h3, h4, h5, h6, .font-serif {
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
+.card-title {
+    color: var(--primary-color);
+}
+
 .card-text {
     color: rgba(255,255,255,0.7) !important;
 }
@@ -188,4 +193,15 @@ body.light-mode .accordion-body {
 }
 body.light-mode .accordion-button.collapsed::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+body.light-mode .btn-outline-light {
+    color: var(--dark-color);
+    border-color: var(--dark-color);
+}
+
+body.light-mode .btn-outline-light:hover {
+    color: var(--light-color);
+    background-color: var(--dark-color);
+    border-color: var(--dark-color);
 }

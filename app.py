@@ -14,6 +14,14 @@ def about():
 def project():
     return render_template('project.html')
 
+@app.route('/3d-gallery')
+def gallery_3d():
+    return render_template('3d_gallery.html')
+
+@app.route('/2d-gallery')
+def gallery_2d():
+    return render_template('2d_gallery.html')
+
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
