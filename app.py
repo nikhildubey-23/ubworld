@@ -26,6 +26,10 @@ def gallery_2d():
 def contact():
     return render_template('contact.html')
 
+@app.route('/awardpage')
+def awardpage():
+    return render_template('awardpage.html')
+
 @app.route('/download/brochure')
 def download_brochure():
     return send_from_directory('static', 'UB World.pdf', as_attachment=True)

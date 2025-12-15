@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block title %}Awards & Recognitions{% endblock %}
+{% block meta_description %}Explore the awards and recognitions received by Rahul Ubhrani and UB World, showcasing excellence in real estate development.{% endblock %}
+
+{% block content %}
+<!-- Awards Hero -->
+<section class="p-5 text-center bg-image position-relative" style="background-image: url({{ url_for('static', filename='img/award1.jpg') }}); background-size: cover; background-position: center; height: 60vh;">
+    <div class="mask position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white" data-aos="fade-up">
+                <h1 class="mb-3 display-3 fw-bold font-serif">Our Accolades</h1>
+                <p class="mb-3 fs-5 text-accent text-uppercase" style="letter-spacing: 2px;">Excellence Recognized</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Awards Section -->
+<section class="py-5">
+    <div class="container text-center">
+        <h2 class="text-sm fw-bold text-accent text-uppercase mb-2" data-aos="fade-up" style="letter-spacing: 1px;">Achievements</h2>
+        <h3 class="display-4 font-serif fw-bold mb-5" data-aos="fade-up">Rahul Ubhrani's Awards</h3>
+
+        <div class="row g-4 justify-content-center">
+            <!-- Award 1 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 bg-dark text-white shadow-lg border-secondary">
+                    <img src="{{ url_for('static', filename='img/award0.png') }}" class="card-img-top p-3 rounded" alt="Award Image 1" style="object-fit: contain; max-height: 250px;">
+                    <div class="card-body text-center p-4">
+                        <h4 class="card-title font-serif fw-bold mb-3">BEST UPCOMING MEGA RESIDENTIAL TOWNSHIP PROJECT IN BILSAPUR</h4>
+                        <p class="card-text text-white-50">Recognizing innovative and impactful urban development.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Award 2 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card h-100 bg-dark text-white shadow-lg border-secondary">
+                    <img src="{{ url_for('static', filename='img/award1.jpg') }}" class="card-img-top p-3 rounded" alt="Award Image 2" style="object-fit: contain; max-height: 250px;">
+                    <div class="card-body text-center p-4">
+                        <h4 class="card-title font-serif fw-bold mb-3">ORANGE INTERNATIONAL BUSINESS EXCELLENCE AWARDS 2025</h4>
+                        <p class="card-text text-white-50">Awarded for outstanding contributions to business and industry.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Award 3 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card h-100 bg-dark text-white shadow-lg border-secondary">
+                    <img src="{{ url_for('static', filename='img/award2.jpg') }}" class="card-img-top p-3 rounded" alt="Award Image 3" style="object-fit: contain; max-height: 250px;">
+                    <div class="card-body text-center p-4">
+                        <h4 class="card-title font-serif fw-bold mb-3">NATIONAL REAL ESTATE LEADERSHIP AWARD</h4>
+                        <p class="card-text text-white-50">Honoring visionary leadership in the real estate sector.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Award 4 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="card h-100 bg-dark text-white shadow-lg border-secondary">
+                    <img src="{{ url_for('static', filename='img/award3.jpg') }}" class="card-img-top p-3 rounded" alt="Award Image 4" style="object-fit: contain; max-height: 250px;">
+                    <div class="card-body text-center p-4">
+                        <h4 class="card-title font-serif fw-bold mb-3">BEST DEVELOPER OF THE YEAR - LUXURY SEGMENT</h4>
+                        <p class="card-text text-white-50">Acknowledging excellence in crafting high-end residential properties.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more awards as needed -->
+        </div>
+    </div>
+</section>
+{% endblock %}
