@@ -252,3 +252,6 @@ body.light-mode .btn-outline-light:hover {
 .hero-text {
     color: white !important;
 }
+body.light-mode .hero-text {
+    color: white !important;
+}
