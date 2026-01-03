@@ -247,3 +247,8 @@ body.light-mode .btn-outline-light:hover {
     background-color: var(--dark-color);
     border-color: var(--dark-color);
 }
+
+/* Hero text always white */
+.hero-text {
+    color: white !important;
+}
